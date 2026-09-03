@@ -1,0 +1,236 @@
+.containerc6{
+    padding-top: 60px;
+    padding-bottom:30px ;
+}
+.containerc61{
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    justify-content:space-around;
+    gap: 25px;
+
+    ul li{
+       list-style: none;
+       margin-top: 10px;
+       opacity: 0.7;
+   }
+   
+}
+.svg2{
+    margin-bottom: 20px;
+     svg{
+        width: 20px;
+        margin-left: 5px;
+     }
+}
+
+
+/* media query */
+
+
+@media screen and  (max-width:480px) {
+ 
+.containerc6{
+    padding-top: 60px;
+    padding-bottom:30px ;
+}
+.containerc61{
+    display: grid;
+    grid-template-columns: repeat(2,min(100px));
+    justify-content:space-around;
+    gap: 25px;
+
+    ul li{
+       list-style: none;
+       margin-top: 10px;
+       opacity: 0.7;
+   }
+   
+}
+}
+
+
+@media screen and  (min-width:481px) and (max-width:780px) {
+
+.containerc6{
+    padding-top: 60px;
+    padding-bottom:30px ;
+}
+.containerc61{
+    display: grid;
+    grid-template-columns: repeat(4,min(100px));
+    justify-content:space-around;
+    gap: 10px;
+
+    ul li{
+       list-style: none;
+       margin-top: 10px;
+       opacity: 0.7;
+   }
+   
+}
+}
+
+
+@media screen and  (min-width:781px) and (max-width:980px) {
+ 
+.containerc6{
+    padding-top: 60px;
+    padding-bottom:30px ;
+}
+.containerc61{
+    display: grid;
+    grid-template-columns: repeat(5,min(100px));
+    justify-content:space-around;
+    gap: 10px;
+
+    ul li{
+       list-style: none;
+       margin-top: 10px;
+       opacity: 0.7;
+   }
+   
+}
+
+}
+
+
+@media screen and  (min-width:981px) and (max-width:1024px) {
+
+ .containerc4{
+     padding-bottom: 40px;
+    position: relative;
+    background-color:#FFF7E5;
+    padding-top:30px ;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+ }
+ .containerc41{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(200px, 1fr));
+    justify-content:center ;
+    gap: 20px;
+    align-items:start;
+    margin: 0px 100px;
+}
+.c41{
+    background-color: white;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.183);
+    
+    h3{
+      margin: 6px 0px;
+    }
+    p{
+        line-height: 25px;
+        opacity: 0.7;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    svg{
+        margin-left: 5px;
+        width: 17px;
+        fill: var(--color);
+    }
+}
+
+.containerc5{
+    /* background-color: var(--bg1); */
+    padding:10px;
+    text-align: center;
+
+}
+
+.containerc51{
+     color: white;
+     background-color:#201802;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    border-radius: 20px;
+}
+
+#idc51{
+     h3{
+        font-size:1.5rem;
+        margin-top:10px;
+     }
+     p{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        line-height: 25px;
+        opacity: 0.8;
+     }
+}
+.c51{
+    img{
+        min-height: 250px;
+    }
+}
+.inputbtn1{
+   input{
+     width:60%;
+     height: 50px;
+     border: none;
+     padding-left: 20px;
+     border-radius: 5px 0 0 5px;
+     background-color:#362F1B;
+   }
+   button{
+    padding: 16.1px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--color);
+    color: white;
+   }
+}
+
+.containerc6{
+    padding-top: 60px;
+    padding-bottom:30px ;
+}
+.containerc61{
+    display: grid;
+    grid-template-columns: repeat(5,min(100px));
+    justify-content:space-around;
+    gap: 10px;
+
+    ul li{
+       list-style: none;
+       margin-top: 10px;
+       opacity: 0.7;
+   }
+   
+}
+
+.c412{
+    position:absolute;
+     top:200px;
+     left: 6%;
+     display: flex;
+    background-color:var(--bg1);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px;
+    svg{
+       opacity: 0.6;
+    }
+}
+.c413{
+    position:absolute;
+     top:200px;
+     right: 6%;
+     display: flex;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px;
+    svg{
+       opacity: 0.6;
+    }
+}
+}

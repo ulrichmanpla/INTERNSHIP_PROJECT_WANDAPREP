@@ -1,0 +1,112 @@
+  :root{
+    --color: #F9B900;
+    --bg1:#F8F8F8;
+    --bg3:#FFF2E8;
+    --bg2:#FFF7E5;
+    --color1:#FFEAB6;
+     --bg2:#201802;
+     --color2:#9A50DF;
+  }
+
+  .bodyTeacher{
+    background-color: var(--bg1);
+    margin-top: 55px;
+  }
+
+  .containerc1{
+    padding-top:30px ;
+    display: flex;
+    justify-content: center;
+  }
+
+  .containerc2{
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    svg{
+        width: 18px;
+        fill: var(--color);
+    }
+    padding-bottom: 30px;
+    p{
+        margin-top: 10px;
+    }
+  }
+
+  .divc21{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    img{
+        width: 100%;
+    }
+    p{
+        font-size: 12px;
+        opacity: 0.6;
+    }
+  }
+
+
+  /* media query */
+  
+   @media screen and (max-width:426px) {
+  .containerc1{
+    font-size: 0.5rem;
+    margin: 0;
+  }
+
+  .containerc2{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(210px,1fr));
+
+  }
+  }
+
+  @media screen and (min-width:427px)  and (max-width:480px) {
+  .containerc1{
+    font-size: 0.7rem;
+  }
+
+  .containerc2{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(210px,1fr));
+
+  }
+  }
+
+   @media screen and (min-width:481px)  and (max-width:680px) {
+  .containerc1{
+    font-size: 0.7rem;
+  }
+
+  .containerc2{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(210px,1fr));
+
+  }
+  }
+  @media screen and (min-width:681px)  and (max-width:980px) {
+  .containerc1{
+    font-size: 0.7rem;
+  }
+
+  .containerc2{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+
+  }
+  }
+
+    @media screen and (min-width:981px)  and (max-width:1200px) {
+  .containerc1{
+    font-size: 0.7rem;
+  }
+
+  .containerc2{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(200px,1fr));
+
+  }
+  }

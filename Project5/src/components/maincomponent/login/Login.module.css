@@ -1,0 +1,56 @@
+  :root{
+    --logincolor: #F9B900;
+    --loginbg1:#F8F8F8;
+    --loginbg3:#FFF2E8;
+    --loginbg2:#FFF7E5;
+    --logincolor1:#FFEAB6;
+     --loginbg2:#201802;
+  }
+
+
+  .loginbody{
+    margin-top: 55px;
+    display: flex;
+    padding-top: 10%;
+    justify-content: center;
+  }
+
+  .logincontainerc1{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.413);
+    width: fit-content;
+     padding: 20px;
+     border-radius: 20px;
+     h2{
+      text-align: center;
+      margin-bottom: 20px;
+     }
+
+     background:linear-gradient(to top, var(--loginbg3), var(--logincolor1)) ;
+  }
+  .logininput1{
+    margin-bottom: 30px;
+     input{
+      height: 40px;
+      border-radius: 20px;
+      padding-left:10px;
+      border: 1px solid var(--logincolor);
+      
+     }
+  }
+  .loginbutton{
+     display: flex;
+     justify-content: center;
+    
+     button{
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      background-color: var(--logincolor);
+      color: #201802;
+     }
+
+     button:hover{
+        transition: background 1s ease;
+        transform: scale(1.1);
+     }
+  }

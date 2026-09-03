@@ -1,0 +1,115 @@
+@media screen and (max-width:380px){
+    header{
+       
+         padding: 5px 10px;
+        .navlink{
+            display: none;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 200px;
+            padding: 10px 8px;
+            ul{
+                flex-direction: column;
+                gap: 40px;
+            }
+            background-color: white;
+            text-align: end;
+        }
+        .navlink.open {
+             display: block;
+        }
+    }
+    .menu-icon, .close-icon{
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width:381px) and (max-width: 480px){
+ 
+    header{
+         padding: 5px 10px;
+        .navlink{ 
+            display: none;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 200px;
+            padding: 10px 8px;
+            ul{
+                flex-direction: column;
+                gap: 40px;
+            }
+            background-color: white;
+            text-align: end;
+        }
+
+        .navlink.open {
+             display: block;
+        }
+    }
+     .menu-icon, .close-icon{
+        display: flex;
+    }
+  
+}
+
+@media screen and (min-width:481px) and (max-width:700px){
+      header{
+         padding: 5px 10px;
+       
+        .navlink{
+            display: none;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 200px;
+            padding: 10px 8px;
+            ul{
+                flex-direction: column;
+                gap: 40px;
+            }
+            background-color: white;
+            text-align: end;
+        } 
+
+        .navlink.open {
+             display: block;
+        }
+    }
+     .menu-icon, .close-icon{
+        display: flex;
+
+
+}}
+
+@media screen and (min-width:701px) and (max-width:800px){
+     
+    header{
+        ul li{
+            margin-left:10px;
+            font-size: 1.1rem;
+        }
+        padding: 3px 15px;
+    }
+  
+}
+
+@media screen and (min-width:801px) and (max-width: 980px){
+     header{
+        ul li{
+            margin-left: 20px;
+            font-size: 1.2rem;
+        }
+    
+}
+}
+
+@media screen and (min-width:980px) and (max-width:1680px){
+     .heads2{
+        input{
+            width: 400px;
+        }
+     }
+}
