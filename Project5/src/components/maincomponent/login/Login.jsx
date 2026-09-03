@@ -13,11 +13,11 @@ export default function Login() {
               <form action="">
                 <div className={styles.logininput1}>
                   <label htmlFor="email">Email</label><br />
-                <input type="Email" id='email' placeholder='enter email....' />
+                <input type="Email" id='email' placeholder='enter email....' required />
                 </div>
                 <div className={styles.logininput1}>
                     <label  htmlFor="password">Password</label><br />
-                    <input type="password" id='password' placeholder='enter password...' />
+                    <input type="password" id='password' placeholder='enter password...' required />
                 </div>
                  <div className={styles.loginbutton}>
                         <button>Login</button>
