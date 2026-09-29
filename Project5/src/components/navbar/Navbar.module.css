@@ -88,6 +88,7 @@ header{
    .navlink{
       display: flex;
       gap: 90px;
+      align-items: center;
    }
  /* media query */
 

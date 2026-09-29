@@ -1,0 +1,18 @@
+require('dotenv').config()
+const express = require('express')
+const cors = require('cors')
+const app = express()
+const userRegister = require('./routers/registerRoute')
+const errorHandler = require('./middleware/errorhandler')
+const routenotfound =require('./middleware/routenotfound.js')
+const taskrouter = require('./routers/taksRoute.js')
+ app.use(express.json())
+ app.use(cors())
+
+ app.use('/auth',userRegister)
+ app.use('/task',taskrouter)
+ app.use(routenotfound)
+ app.use(errorHandler)
+ app.listen(3000,()=>{
+    console.log('server running on port http://localhost:3000')
+ })

@@ -404,11 +404,20 @@
         width: 100%;
     }
  }
+   .containerc2{
+    padding: 0 10px;
+   }
+   .containerc21{
+     height: 190px;
+   }
+  .containerc22{
+    background-color: blue;
+    display: none;
+  }
 
  .containerc23{
-    grid-template-columns: repeat(2,195px);
-    /* position: relative; */
-    /* background-color: blue; */
+    position: relative;
+    grid-template-columns: repeat(2,minmax(150px,1fr));
     gap: 10px;
 
     img{

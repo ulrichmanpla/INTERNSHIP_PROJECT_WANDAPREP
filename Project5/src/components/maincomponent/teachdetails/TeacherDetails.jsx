@@ -2,10 +2,14 @@
 
 import styles from  './TeacherDetails.module.css'
 import img8 from '../../../assets/8.png'
-import profile from '../../../assets/BG.png'
+// import profile from '../../../assets/BG.png'
 import rectangle17 from '../../../assets/Rectangle17.png'
 import rectangle19 from '../../../assets/Rectangle19.png'
+import { teacher } from '../../../teacherData'
+import { useParams } from 'react-router-dom'
 export default function TeacherDetails() {
+    const {id}=useParams()
+    const searchteacher = teacher.find((n) => n.id === Number(id))
   return (
     <>
      <div className={styles.bodyTeacherDetails}>
@@ -17,8 +21,8 @@ export default function TeacherDetails() {
          <div className={styles.containerc2}>
                   <div className={styles.headc21}>
                      <div className={styles.headc211}>
-                         <img src={profile} alt="" />
-                         <h3>Kriston Wiston</h3>
+                         <img src={searchteacher.img} alt="" style={{borderRadius:'50%'}} />
+                         <h3>{searchteacher.name}</h3>
                      </div>
                      <div className={styles.headc22}>
                         <div className={styles.textc11}>
@@ -65,11 +69,9 @@ export default function TeacherDetails() {
                   </div>
                       <div className={styles.c2head1}>
                            <div className={styles.smallheading1}>
-                          <h2>About Kristin</h2>
+                          <h2>About {searchteacher.name}</h2>
                           <p>
-                            Lorem ispsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br />
-                            dolor magna aliqua.Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan <br />
-                            lacus vel facilis consectetur adipiscing elit. <br />
+                            {searchteacher.text}
                           </p> 
                           <p>
                             Lorem ispsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br />

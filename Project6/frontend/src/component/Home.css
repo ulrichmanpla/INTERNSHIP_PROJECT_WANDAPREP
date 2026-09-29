@@ -1,0 +1,236 @@
+
+:root{
+    --homebg1:#F5F3FD;
+    --homebg2:#8A2CF4;
+    --homeb3:#F0EFFF;
+    --homecolor1:#B778F9;
+    --homeb4:#F1E8FF;
+    --div1b1:#2B7FFF;
+    --div1c1:#E1EEFF;
+    --div2b2:#FF6900;
+    --div2c2:#FFF2E1;
+    --div3b3:#00C84D;
+    --div3c3:#E4FDEC;
+    --div4b4:#AD46FF;
+    --div4c4:#F5EDFE;
+}
+
+header{
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding:  10px 20px;
+
+     img{
+        border-radius: 10px;
+     }
+     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.265);
+
+     .profile{
+        background-color: var(--homebg2);
+        padding: 15px;
+        border-radius: 50px;
+        color: white;
+     }
+   
+}
+
+.s1{
+    min-height: 100vh;
+    background-color:#f5f3fdd0;
+    padding: 10rem 70px 10px 70px;
+} 
+a{
+    text-decoration: none;
+}
+.homec1{
+    background-color: var(--homeb4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.349);
+    .hometext1{
+         color: var(--homebg2);
+         font-weight: bold;
+         font-size: 1.5rem;
+         margin-bottom: 10px;
+    }
+    .hometext2{
+        opacity: 0.6;
+    }
+
+    .homeview{
+        background-color: var(--homebg2);
+        padding: 5px 10px;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+.homec2{
+    margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+   justify-content: space-between;
+}
+
+.hdivc1{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.288);
+
+    .htext1{
+        text-align: center;
+        font-weight: bold;
+    }
+    svg{
+        fill: white;
+    }
+   
+}
+
+#hid1{
+    background-color: var(--div1c1);
+    svg{
+        background-color: var(--div1b1);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    color: var(--div1b1);
+    .htext2{
+        color: rgb(23, 31, 136);
+    }
+}
+#hid2{
+    background-color: var(--div2c2);
+    svg{
+        background-color: var(--div2b2);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    color: var(--div2b2);
+    .htext2{
+        color: #94450d;
+    }
+}
+
+#hid3{
+    background-color: var(--div3c3);
+    svg{
+        background-color: var(--div3b3);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    color: var(--div3b3);
+    .htext2{
+        color: green;
+    }
+}
+#hid4{
+    background-color: var(--div4c4);
+    svg{
+        background-color: var(--div4b4);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    color: var(--div4b4);
+    .htext2{
+        color: purple;
+    }
+}
+
+
+.homec3{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,33rem);
+    justify-content: space-between;
+    align-items: start;
+    .homec31{
+        background-color: white;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.313);
+        padding: 15px;
+        border-radius: 10px;
+        align-items: start;
+        h3{
+            margin-bottom: 10px;
+        }
+        .tc31{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .hsub1{
+           opacity: 0.6;
+        }
+    }
+    .homec32{
+        background-color: white;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.313);
+        border-radius: 10px;
+        padding: 15px;
+    }
+}
+
+.progressbar{
+    background-color:var(--div1c1);
+    height: 12px;
+    width: 100%;
+    border-radius: 20px;
+}
+.progression{
+    background-color:var(--div4b4);
+    height:12px;
+    border-radius:20px;
+}
+
+.threecard{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.hdivc3{
+    text-align: center;
+}
+
+#h3c1{
+    color: purple;
+}
+#h3t1{
+    color: var(--homebg2);
+}
+
+#h3c2{
+    color: orangered;
+}
+#h3t2{
+    color: var(--div2b2);
+}
+#h3c3{
+    color:green;
+}
+#h3t3{
+    color: var(--div3b3);
+}
+.hsmallcard{
+    margin-top: 20px;
+    display: flex;
+    gap:15px;
+    align-items: center;
+    background-color:var(--homebg1);
+    padding: 10px;
+    border-radius: 10px;
+}
+.finish{
+    fill: green;
+}
+.notfinish{
+    fill: green;
+}

@@ -7,7 +7,8 @@ import Teacher from "./components/maincomponent/teacher/Teacher"
 import TeacherDetails from "./components/maincomponent/teachdetails/TeacherDetails"
 import Signup from "./components/maincomponent/signup/Signup"
 import Login from "./components/maincomponent/login/Login"
- import { useState } from "react"
+import { useState } from "react"
+import { teacher } from "./teacherData"
  
  export default function App() {
    const [selectcourse, setSelectCourse]=useState("")
@@ -17,9 +18,9 @@ import Login from "./components/maincomponent/login/Login"
        <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/course" element={<Course selectcourse={selectcourse} setSelectCourse={setSelectCourse}/>}/>
-          <Route path="/teacher" element={<Teacher/>}/>
+          <Route path="/teacher" element={<Teacher teacher={teacher}/>}/>
           <Route path="/coursedetails" element={<CourseDetails/>}/>
-          <Route path="/teacherdetails" element={<TeacherDetails/>}/>        
+          <Route path="/teacherdetails/:id" element={<TeacherDetails teacher={teacher}/>}/>        
           <Route path="/signup" element={<Signup/>}/>        
           <Route path="/login" element={<Login/>}/>        
        </Routes>

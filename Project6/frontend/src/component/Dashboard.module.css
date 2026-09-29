@@ -1,0 +1,254 @@
+
+
+:root{
+    --dbg1:#F5F3FD;
+    --dbg2:#8A2CF4;
+    --db3:#F0EFFF;
+    --dcolor1:#B778F9;
+    --db4:#F1E8FF;
+    --db1:#2B7FFF;
+    --dc1:#E1EEFF;
+    --db2:#FF6900;
+    --dc2:#FFF2E1;
+    --db3:#00C84D;
+    --dc3:#E4FDEC;
+    --db4:#AD46FF;
+    --dc4:#F5EDFE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ .Dashboardmain{
+     padding:8rem 70px 10px 70px;
+     background-color:#f1e8ff57;
+     min-height: 100vh;
+ }
+/* .dmainc1{
+}
+  */
+.dformc1{
+    background-color: var(--dc4);
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.288);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    .dtext1{
+        font-size: 2rem;
+        color: var(--dbg2);
+    }
+    .dbtn1{
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        background-color: var(--dbg2);
+    }
+}
+
+.dformc2{
+     background-color: white;
+    margin-top: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.402);
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%;
+}
+.dinput1{
+    display: flex;
+    justify-content: space-between;
+    
+    input{
+        width: 25rem;
+    }
+}
+.dbtn2{
+    cursor: pointer;
+    padding: 5px 15px;
+    border: none;
+    background-color: var(--dbg2);
+    color: white;
+    border-radius: 10px;
+}
+.dinput2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.darea{
+    width: 25rem;
+}
+.select1{
+    margin-top: 10px;
+}
+.dclose{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+.dbtn3{
+    border: none;
+    padding: 10px;
+    background-color: var(--dbg2);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.htask{
+    margin-top: 40px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.183);
+}
+.htaskc1{
+    background-color: var(--dc4);
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.h2task{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+     box-shadow: 0px 3px 5px rgba(128, 0, 128, 0.235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h3task{
+    display: flex;
+    gap: 10px;
+    align-items:flex-start; 
+}
+.high{
+    background-color: rgba(255, 0, 0, 0.683);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.medium{
+    background-color: orange;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.low{
+    background-color:rgba(0, 128, 0, 0.523);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.priorityh3{
+
+    margin-top: 10px;
+}
+
+.dactive{
+    background-color: white;
+    padding: 2px 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.descriptiontext{
+     overflow-wrap:break-word;
+}
+
+.linetext{
+    text-decoration: line-through;
+    background-color: rgba(172, 255, 47, 0.066);
+    opacity: 0.6;
+}
+
+.messageCreateion{
+    margin-top: 20px;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.155);
+    color: white;
+    background-color: #00c84da5;
+}
+
+.messageDeletion{
+    margin-top: 20px;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.155);
+    color: white;
+    background-color: red;
+}
+
+.reactmodal {
+  border: none;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  top: 30%;
+  left: 40%;
+}
+
+.reactmodal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.modalbtn1{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.modalbtn2{
+    background-color: rgb(45, 0, 128);
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.modalbtn3{
+    background-color: red;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.backbtn {
+    width: fit-content;
+    background-color: var(--dbg2);
+    padding: 5px;
+    border-radius: 50px;
+   margin-bottom: 10px;
+   
+   a{
+    padding: 10px;
+      text-align: center;
+   }
+   svg{
+    fill:white;
+   }
+}
